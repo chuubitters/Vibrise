@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vibrise</title>
+    <link rel="stylesheet" href="content-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="menu">
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
+            <div id="icon-ph">
+                <img src="pics/hbg-icon.png" alt="">
+                <img src="pics/search-icon.png" alt="">
+            </div>
+            <div id="text">
+                <p><a href="index.html" class="to-home">หน้าหลัก</a></p>
+                <p><a href="featurepage.html" class="to-music">เพลง</a></p>
+                <p><a href="contentpage.html" class="to-contact">โหมดนักดนตรี</a></p>
+                <p><a href="contact.html" class="to-content">ติดต่อเรา</a></p>
+                
+                <div class="container">
+                    <div class="searchInputWrapper">
+                        
+                        <input class="searchInput" type="text" placeholder="ค้นหา">
+                        <i class="searchInputIcon fa fa-search"></i>
+                    </div>
+                </div>
+                <div id="logobutton-con">ลงทะเบียน
+                    <div id="regis">เข้าสู่ระบบ</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="top">
+            <div class="post">
+                <div id="post-box">
+                    <div class="profile-section">
+                        <img src="ct-pics/profile-pic.png" alt="Profile Picture" class="profile-pic">
+                        <input type="text" placeholder="อัปโหลด cover version หรือคอร์ดเพลงของคุณ!" class="post-input">
+                    </div>
+                    <div class="upload-options">
+                        <div class="upload-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41"
+                                fill="none">
+                                <g clip-path="url(#clip0_54_520)">
+                                    <path
+                                        d="M20.5 0C9.17823 0 0 9.17823 0 20.5C0 31.8224 9.17823 41 20.5 41C31.8224 41 41 31.8224 41 20.5C41 9.17823 31.8224 0 20.5 0ZM20.5 38.4779C10.6094 38.4779 2.5625 30.3906 2.5625 20.4999C2.5625 10.6093 10.6094 2.56242 20.5 2.56242C30.3906 2.56242 38.4375 10.6094 38.4375 20.4999C38.4375 30.3905 30.3906 38.4779 20.5 38.4779ZM29.4688 19.2188H21.7812V11.5312C21.7812 10.824 21.2072 10.25 20.5 10.25C19.7928 10.25 19.2188 10.824 19.2188 11.5312V19.2188H11.5312C10.824 19.2188 10.25 19.7928 10.25 20.5C10.25 21.2072 10.824 21.7812 11.5312 21.7812H19.2188V29.4688C19.2188 30.176 19.7928 30.75 20.5 30.75C21.2072 30.75 21.7812 30.176 21.7812 29.4688V21.7812H29.4688C30.176 21.7812 30.75 21.2072 30.75 20.5C30.75 19.7928 30.176 19.2188 29.4688 19.2188Z"
+                                        fill="#787AFF" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_54_520">
+                                        <rect width="41" height="41" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>photo/video</p>
+                        </div>
+                        <div class="upload-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+                                fill="none">
+                                <path
+                                    d="M21.0472 6.27003C21.7466 5.55942 22.5798 4.9943 23.4987 4.60726C24.4176 4.22022 25.404 4.01891 26.401 4.01495C27.3981 4.01099 28.3861 4.20445 29.308 4.58419C30.2299 4.96392 31.0675 5.5224 31.7726 6.22743C32.4776 6.93246 33.0361 7.7701 33.4158 8.69202C33.7956 9.61395 33.989 10.6019 33.9851 11.599C33.9811 12.596 33.7798 13.5825 33.3927 14.5013C33.0057 15.4202 32.4406 16.2534 31.73 16.9528L26.9325 21.7503L24.6921 19.513L29.4896 14.714C30.3126 13.8913 30.7752 12.7754 30.7755 11.6117C30.7758 10.4481 30.3138 9.33192 29.4911 8.50887C28.6685 7.68581 27.5526 7.22326 26.3889 7.22296C25.2252 7.22266 24.1091 7.68465 23.2861 8.50728L18.487 13.3064L16.2481 11.0675L21.0472 6.27003ZM24.4039 15.8334L15.8301 24.4055L13.5913 22.1667L22.1635 13.5945L24.4039 15.8334ZM13.3047 18.487L8.50722 23.2861C7.68417 24.1092 7.22178 25.2255 7.22178 26.3895C7.22178 27.5534 7.68417 28.6697 8.50722 29.4928C9.33028 30.3158 10.4466 30.7782 11.6106 30.7782C12.7745 30.7782 13.8908 30.3158 14.7139 29.4928L19.5114 24.6937L21.7502 26.9325L16.9527 31.73C15.5361 33.1469 13.6147 33.9429 11.6111 33.9431C9.60756 33.9432 7.68601 33.1474 6.26918 31.7308C4.85235 30.3142 4.0563 28.3928 4.05615 26.3892C4.056 24.3857 4.85177 22.4641 6.26839 21.0473L11.0659 16.2498L13.3047 18.487Z"
+                                    fill="#787AFF" />
+                            </svg>
+                            <p>file</p>
+                        </div>
+                        <button class="post-button">โพสต์</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="for-you">
+                <div id="text-header">
+                    <p1>เพลงยอดนิยมสำหรับคุณ</p1>
+                    <div id="arrow">
+                        <img src="ct-pics/weui_arrow-outlined.svg" alt="">
+                    </div>
+                </div>
+                <div id="fu-song">
+                    <div id="fu-song1">
+                        <img src="ct-pics/fu-song1.png" alt="">
+                        <p2>Taste</p2>
+                        <br>
+                        <p3>Sabrina Carpenter</p3>
+                    </div>
+                    
+                    <div id="fu-song2">
+                        <img src="ct-pics/fu-song2.png" alt="">
+                        <p2>Bad Dreams</p2>
+                        <br>
+                        <p3>Teddy Swims</p3>
+                    </div>
+                    <div id="fu-song3">
+                        <img src="ct-pics/fu-song3.png" alt="">
+                        <p2>LIAR</p2>
+                        <br>
+                        <p3>BUS</p3>
+                    </div>
+                    <div id="fu-song4">
+                        <img src="ct-pics/fu-song4.png" alt="">
+                        <p2>I Just Wanna Known</p2>
+                        <br>
+                        <p3>Pun</p3>
+                    </div>
+                    <div id="fu-song5">
+                        <img src="ct-pics/fu-song5.png" alt="">
+                        <p2>Kiss Me Right</p2>
+                        <br>
+                        <p3>Keshi</p3>
+                    </div>
+
+                </div>
+            </div>
+     
+
+
+            <div class="your-playlist">
+                <div id="text-header">
+                    <p1>คลังของคุณ</p1>
+                    <div id="arrow">
+                        <img src="ct-pics/weui_arrow-outlined.svg" alt="">
+                    </div>
+                </div>
+
+                <div id="yp-content">
+                    <div id="yp-colum-l">
+                        <div id="yp-l-1">
+                            <img src="ct-pics/yp-1.png" alt="">
+                            <div class="text-container">
+                                <p2>คอนเสิร์ตฮาโลวีน</p2>
+                                <p3>9 เพลง, 12 โพสต์</p3>
+                            </div>
+                        </div>
+                        <div id="yp-l-1">
+                            <img src="ct-pics/yp-2.png" alt="">
+                            <div class="text-container">
+                                <p2>เพลงลง tiktok</p2>
+                                <p3>9 เพลง, 12 โพสต์</p3>
+                            </div>
+                        </div>
+                        <div id="yp-l-1">
+                            <img src="ct-pics/yp-3.png" alt="">
+                            <div class="text-container">
+                                <p2>เล่นจีบสาว</p2>
+                                <p3>9 เพลง, 12 โพสต์</p3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="yp-colum-r">
+                        <div id="yp-r-1">
+                            <img src="ct-pics/yp-4.png" alt="">
+                            <div class="text-container">
+                                <p2>ฝึกเล่นเอง</p2>
+                                <p3>9 เพลง, 12 โพสต์</p3>
+                            </div>
+                        </div>
+                        <div id="yp-r-1">
+                            <img src="ct-pics/yp-5.png" alt="">
+                            <div class="text-container">
+                                <p2>สอบไฟนอล</p2>
+                                <p3>9 เพลง, 12 โพสต์</p3>
+                            </div>
+                        </div>
+                        <div id="yp-r-1">
+                            <img src="ct-pics/yp-6.png" alt="">
+                            <div class="text-container">
+                                <p2>เล่นตอนอกหัก</p2>
+                                <p3>9 เพลง, 12 โพสต์</p3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vdo-tu">
+            <div id="text-header-w">
+                <p1>คลิปสอน</p1>
+                <div id="arrow-w">
+                    <img src="ct-pics/weui_arrow-outlined-w.svg" alt="">
+                </div>
+            </div>
+            <div id="vdo-tu-content">
+                <div id="vdo-tu-box">
+                    <img src="ct-pics/vdo-tul1.png" alt="">
+                    <img src="ct-pics/vdo-tul2.png" alt="">
+                    <img src="ct-pics/vdo-tul3.png" alt="">
+                    <img src="ct-pics/vdo-tul4.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="chord-section">
+            <div id="text-header">
+                <h2>คอร์ดเพลง </h2>
+                <div id="arrow">
+                    <img src="ct-pics/weui_arrow-outlined.svg" alt="">
+                </div>
+            </div>
+            <div class="chord-carousel">
+                <div class="chord-item">
+                    <img src="ct-pics/cord1.png" alt="Chord Image 1" class="chord-image">
+                    <div class="chord-info">
+                        <img src="ct-pics/artist-cord1.png" alt="Artist Image" class="artist-image">
+                        <div class="chord-text">
+                            <p>ตุ๊กตา Silly Fools</p>
+                            <span>แสงน้อย</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chord-item">
+                    <img src="ct-pics/chord2.png" alt="Chord Image 2" class="chord-image">
+                    <div class="chord-info">
+                        <img src="ct-pics/artist-chord2.png" alt="Artist Image" class="artist-image">
+                        <div class="chord-text">
+                            <p>ไม่บอกเธอ</p>
+                            <span>Funky Monkey</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chord-item">
+                    <img src="ct-pics/chord3.png" alt="Chord Image 2" class="chord-image">
+                    <div class="chord-info">
+                        <img src="ct-pics/artist-chord3.png" alt="Artist Image" class="artist-image">
+                        <div class="chord-text">
+                            <p>ทำได้เพียง 25hours</p>
+                            <span>ช้างแอบเต้น</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chord-item">
+                    <img src="ct-pics/chord4.png" alt="Chord Image 2" class="chord-image">
+                    <div class="chord-info">
+                        <img src="ct-pics/artist-chord4.png" alt="Artist Image" class="artist-image">
+                        <div class="chord-text">
+                            <p>slow dive wave to earth</p>
+                            <span>Cheesy Nachos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chord-item">
+                    <img src="ct-pics/chord5.png" alt="Chord Image 2" class="chord-image">
+                    <div class="chord-info">
+                        <img src="ct-pics/artist-chord5.png" alt="Artist Image" class="artist-image">
+                        <div class="chord-text">
+                            <p>FAVOURITE MISTAKE วี วิโอเลต</p>
+                            <span>muudiary</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- เพิ่ม chord-item ตามต้องการ -->
+            </div>
+        </div>
+
+        <div class="tran-ly">
+            <div id="text-header">
+                <h2>คำแปลเพลง </h2>
+                <div id="arrow">
+                    <img src="ct-pics/weui_arrow-outlined.svg" alt="">
+                </div>
+            </div>
+            <div class="tran-carousel">
+                <div class="tran-item">
+                    <img src="ct-pics/tranpic1.png" alt="tran Image 1" class="tran-image">
+                    <div class="tran-info">
+                        <img src="ct-pics/artist-tran1.png" alt="Artist Image" class="artist-image">
+                        <div class="tran-text">
+                            <p>อยู่ได้แล้ว (คีย์ง่าย)</p>
+                            <span>หมาเลี้ยงเห็ด</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tran-item">
+                    <img src="ct-pics/tranpic2.png" alt="tran Image 1" class="tran-image">
+                    <div class="tran-info">
+                        <img src="ct-pics/artist-tran2.png" alt="Artist Image" class="artist-image">
+                        <div class="tran-text">
+                            <p>อยู่ได้แล้ว (คีย์ง่าย)</p>
+                            <span>หมาเลี้ยงเห็ด</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tran-item">
+                    <img src="ct-pics/tranpic3.png" alt="tran Image 1" class="tran-image">
+                    <div class="tran-info">
+                        <img src="ct-pics/artist-tran3.png" alt="Artist Image" class="artist-image">
+                        <div class="tran-text">
+                            <p>อยู่ได้แล้ว (คีย์ง่าย)</p>
+                            <span>หมาเลี้ยงเห็ด</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tran-item">
+                    <img src="ct-pics/tranpic4.png" alt="tran Image 1" class="tran-image">
+                    <div class="tran-info">
+                        <img src="ct-pics/artist-tran4.png" alt="Artist Image" class="artist-image">
+                        <div class="tran-text">
+                            <p>อยู่ได้แล้ว (คีย์ง่าย)</p>
+                            <span>หมาเลี้ยงเห็ด</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tran-item">
+                    <img src="ct-pics/tranpic5.png" alt="tran Image 1" class="tran-image">
+                    <div class="tran-info">
+                        <img src="ct-pics/artist-tran5.png" alt="Artist Image" class="artist-image">
+                        <div class="tran-text">
+                            <p>อยู่ได้แล้ว (คีย์ง่าย)</p>
+                            <span>หมาเลี้ยงเห็ด</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="note-section">
+            <div id="text-header">
+                <h2>โน้ตเพลง </h2>
+                <div id="arrow">
+                    <img src="ct-pics/weui_arrow-outlined.svg" alt="">
+                </div>
+            </div>
+            <div class="note-carousel">
+                <div class="note-item">
+                    <img src="ct-pics/notepic1.png" alt="Note Image 1" class="note-image">
+                    <div class="note-info">
+                        <img src="ct-pics/artist-note1.png" alt="Artist Image" class="artist-image">
+                        <div class="note-text">
+                            <p>อยู่ได้แล้ว (คีย์ง่าย)</p>
+                            <span>หมาเลี้ยงเห็ด</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <img src="ct-pics/notepic2.png" alt="Note Image 1" class="note-image">
+                    <div class="note-info">
+                        <img src="ct-pics/artist-note2.png" alt="Artist Image" class="artist-image">
+                        <div class="note-text">
+                            <p> ฉันไม่ต้องการตัวเธอ</p>
+                            <span>บัวลอยพุงกลม</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <img src="ct-pics/notepic3.png" alt="Note Image 1" class="note-image">
+                    <div class="note-info">
+                        <img src="ct-pics/artist-note3.png" alt="Artist Image" class="artist-image">
+                        <div class="note-text">
+                            <p>ส่วนต่าง(do it without me)</p>
+                            <span>Cheesy Nachos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <img src="ct-pics/notepic4.png" alt="Note Image 1" class="note-image">
+                    <div class="note-info">
+                        <img src="ct-pics/artist-note4.png" alt="Artist Image" class="artist-image">
+                        <div class="note-text">
+                            <p>แค่น้องชาย</p>
+                            <span>Fluffy P</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="note-item">
+                    <img src="ct-pics/notepic5.png" alt="Note Image 1" class="note-image">
+                    <div class="note-info">
+                        <img src="ct-pics/artist-note5.png" alt="Artist Image" class="artist-image">
+                        <div class="note-text">
+                            <p>แค่ไหนแค่นั้น (NO MATTER WHAT)</p>
+                            <span>ส้มตำเหาะ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="left">
+
+                <a href="index.html"><img src="pics/logo-menu.png"></a></1a>
+                <p>Copyright © 2024 Vibrise Inc.All right rederved</p>
+                <div id="text-link">
+                    <p>กฎหมาย</p>
+                    <p>ศูนย์ความปลอดภัยและความเป็นส่วนตัว</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>คุกกี้</p>
+                    <p>เกี่ยวกับโฆษณา</p>
+                    <p>การเข้าถึง</p>
+                </div>
+            </div>
+            <div id="right">
+                <img src="pics/footer-logo1.png">
+
+                <img src="pics/footer-logo2.png">
+                <img src="pics/footer-logo3.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1104 @@
+@font-face {
+    font-family: skv;
+    src: url(fonts/SukhumvitSet-Light.ttf);
+}
+
+@font-face {
+    font-family: skvb;
+    src: url(fonts/SukhumvitSet-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: skv;
+}
+
+#wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#text a {
+    color: #000;
+    text-decoration: none;
+  }
+  #text {
+    text-decoration: none;
+  } 
+
+#menu {
+    width: 1440px;
+    height: 90px;
+
+    box-shadow: 0px -1px 21.1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 50px 50px;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 999999;
+}
+
+
+
+#logobutton-con {
+
+    width: 236px;
+    height: 50px;
+    margin-left: 10px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    padding-left: 14px;
+
+}
+
+#icon-ph {
+    display: none;
+}
+
+#regis {
+
+    width: 118px;
+    height: 50px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    margin-left: 6px;
+
+    color: #FFFFFF;
+
+
+    background: #787AFF;
+    border-radius: 100px;
+
+}
+
+#logo {
+    height: 49px;
+    width: 214.03px;
+    margin-left: 47px;
+    background-image: url(pics/logo-menu.png);
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#text p {
+    margin-right: 60px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInputWrapper {
+    position: relative;
+    display: flex;
+}
+
+.searchInputWrapper {
+    position: relative;
+    display: flex;
+}
+
+.searchInput {
+    width: 250px;
+    /* Updated for a wider search box */
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    /* Softer shadow */
+    border-radius: 30px;
+    /* Rounded corners similar to the image */
+    padding-left: 20px;
+    font-size: 16px;
+    border: none;
+    /* Removes border */
+}
+
+::placeholder {
+    color: #a1a1a1;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchInputIcon {
+    position: absolute;
+    right: 20px;
+    /* Position icon on the right */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c63ff;
+    /* Color to match the purple icon in the screenshot */
+    font-size: 18px;
+    /* Adjusted size */
+}
+
+
+.search-services {
+    width: 100%;
+    height: 722px;
+    background-color: white;
+    background-image: url('contact-img/Group\ 534.png');
+    background-size: cover;
+    /* ทำให้ภาพขยายเต็มพื้นที่ */
+    background-position: center;
+    /* จัดกึ่งกลางภาพ */
+    display: flex;
+    justify-content: center;
+    /* จัดกึ่งกลางแนวนอน */
+    align-items: center;
+    /* จัดกึ่งกลางแนวตั้ง */
+}
+
+.search-services-container {
+    width: 691px;
+    height: 412px;
+    /* background-color: #6c63ff; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-services-container p {
+    width: 100%;
+    height: 138px;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 51px;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-top: 20px;
+    /* เพิ่มระยะห่างด้านบนจากข้อความ */
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.search-input::placeholder {
+    color: #ccc;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.search-button svg {
+    width: 24px;
+    height: 24px;
+    color: #787AFF;
+}
+
+.about-us {
+    width: 100%;
+    height: 778px;
+    background-color: #000;
+    border-radius: 50px 50px 0px 0px;
+    background-image: url('contact-img/image.png');
+    background-size: cover;
+    /* ทำให้ภาพขยายเต็มพื้นที่ */
+    background-position: center;
+    display: flex;
+
+}
+
+.about-us-box-left {
+    height: 100%;
+    width: 50%;
+}
+
+.about-us-box-left p {
+
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 236px;
+    margin-left: 172px;
+}
+
+.about-us-box-right {
+    height: 100%;
+    width: 50%;
+}
+
+.about-us-box-right h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 114px;
+}
+
+.about-us-box-right h4 {
+    width: 560px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+    margin-top: 201px;
+    margin-left: 83px;
+}
+
+.about-us-box-right h5 {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 42px;
+    margin-left: 480px;
+}
+
+.about-us-box-right h5:hover {
+    text-decoration: underline;
+}
+
+.help-feature {
+    width: 100%;
+    height: 606px;
+    background-color: #787AFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+
+.help-feature h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 82px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box {
+    width: 312px;
+    height: 312px;
+    background-color: #FFF;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* เพิ่ม transition */
+    cursor: pointer;
+
+}
+
+/* .feature-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+} */
+
+.feature-box p {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.feature-box:hover {
+    transform: scale(1.1);
+    /* ขยายกล่องเป็น 110% */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาเมื่อ hover */
+}
+
+.contact-section {
+    width: 100%;
+    height: 1010px;
+    background-color: #FFF;
+    background-image: url(contact-img/Group\ 418.png);
+
+}
+
+.contact-section {
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    background: url('image.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.social-media {
+    width: 292px;
+    height: 365px;
+    margin-left: 149px;
+}
+
+.social-media h2 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 42px;
+}
+
+.social-media-box-left {
+    margin-top: 81px;
+
+}
+
+.contact-section .social-media-box-left p {
+    font-size: 20px;
+}
+
+.social-media-box-left p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social-media {
+    text-align: left;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-button {
+    width: 365px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #A0A0A0;
+    background: #FFF;
+    font-size: 24px;
+}
+
+.social-button img {
+    width: 54px;
+    height: 54px;
+    margin-left: 26px;
+    cursor: pointer;
+}
+
+.social-button button {
+    background: none;
+    border: 2px solid #787AFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 1px;
+    font-size: 22px;
+    color: #787AFF;
+    cursor: pointer;
+}
+
+.contact-form {
+    display: flex;
+    width: 616px;
+    margin-left: 188px;
+    margin-top: 103px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 69px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    height: 74px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid #A0A0A0;
+    background: #FFF;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none; /* สำหรับ Safari */
+    -moz-appearance: none;
+    
+}
+
+
+
+.contact-form select{
+    background-image: url('data:image/svg+xml,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 20 20"%3E%3Cpath fill%3D"%23787AFF" d%3D"M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" /%3E%3C/svg%3E');
+background-repeat: no-repeat;
+background-position: right 12px center;
+background-size: 30px 24px; /* ปรับขนาดไอคอน */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.contact-form .submit-button {
+    background-color: #787AFF;
+    height: 74px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #5b59d9;
+}
+
+.location-section {
+    width: 100%;
+    height: 567px;
+    background-color: #F5F5F7;
+}
+
+.location-box-left {
+    width: 300px;
+    height: 339px;
+    margin-top: 76px;
+    margin-left: 175px;
+}
+
+.location-box-left h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.location-box-left h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+
+.address-box {
+    margin-top: 26px;
+}
+
+.location-section {
+    display: flex;
+    gap: 20px;
+    background-color: #F5F5F7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* กล่องข้อมูลที่อยู่ */
+.location-box-left {
+    max-width: 300px;
+}
+
+.location-box-left h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.address-box h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.address-box p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* กล่อง Google Map ใน location-box-right */
+.location-box-right {
+    width: 636px;
+    height: 448px;
+    border-radius: 30px;
+    margin-left: 135px;
+    margin-top: 60px;
+    border: 2px solid #787AFF;
+    overflow: hidden;
+}
+
+.location-box-right iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.footer {
+    height: 264px;
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#left p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2F2F2F;
+    margin-left: 18px;
+    cursor: pointer;
+
+}
+
+#text-link {
+    display: flex;
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right img {
+    margin-right: 27px;
+}
+
+#element1,
+#element2,
+#element3 {
+    width: 420px;
+    height: 377px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Ensure content is left-aligned initially */
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin-right: 20px;
+    position: relative;
+    /* Important for absolute positioning inside */
+    cursor: pointer;
+}
+
+#element1 img,
+#element2 img,
+#element3 img {
+    position: absolute;
+    /* Use absolute positioning */
+    right: 10px;
+    /* Push the image to the right edge */
+    top: 50%;
+    /* Align vertically */
+    transform: translateY(-50%);
+    /* Center vertically */
+    height: auto;
+}
+
+#element1 p,
+#element2 p,
+#element3 p {
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    /* Keep it relative within the parent */
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+    color: #000000;
+    z-index: 2;
+}
+
+#element2 p {
+
+    margin-left: 42px;
+
+
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+
+    color: #000000;
+
+}
+
+#element3 p {
+
+    margin-left: 42px;
+
+
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+
+    color: #000000;
+
+}
+
+#playing-ph {
+    display: none;
+}
+
+.marquee__group img {
+    width: auto;
+    /* Or whatever your default size is */
+    height: auto;
+    /* Or whatever your default size is */
+}
+
+#icon {
+
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 610px;
+    top: 172px;
+
+
+}
+
+#menu {
+    position: fixed;
+    background-color: #FFFFFF;
+}
+
+@media screen and (max-width:960px) {
+
+    #text,
+    .container {
+        display: none;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    #logo {
+        height: 27.03px;
+        width: 126.85px;
+        background-image: url(pics/logo-menu-ph.png);
+        margin-left: 17px;
+    }
+
+    #menu {
+        height: 98px;
+        border-radius: 0;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+
+    #icon img {
+        width: 37.32px;
+        height: 37.32px;
+    }
+
+    #icon {
+
+        position: absolute;
+        left: 166px;
+        top: 131px;
+    }
+
+    .search-services {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #logo-contactpage img {
+        width: 281px;
+        margin-top: 120px;
+    }
+
+    .search-services p {
+        width: 267px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+
+    .search-container {
+        width: 268.393px;
+        height: 43.063px;
+    }
+
+    .about-us-box-right h2 {
+        width: 291px;
+        height: 23px;
+        font-size: 22px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-box-left {
+        width: 100%;
+        height: 32px;
+
+    }
+
+    .about-us p {
+        width: 100%;
+        margin: 0;
+        font-size: 22px;
+        text-align: center;
+        justify-content: center;
+        margin-top: 55px;
+    }
+
+    .about-us-box-right {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-us-box-right h2 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin-top: 132px;
+        font-size: 16px;
+    }
+
+    .about-us-box-right h4 {
+        width: 284px;
+        height: 350px;
+        margin-left: 85px;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+
+
+    }
+
+    .about-us-box-right h5 {
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 80px;
+    }
+
+    .help-feature {
+        width: 100%;
+        height: 814px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .help-feature h2 {
+        font-size: 22px;
+    }
+
+    .feature-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .feature-container p {
+        font-size: 20px;
+    }
+
+    .feature-box {
+        width: 205px;
+        height: 205px;
+        margin: 0;
+
+    }
+
+    .contact-section {
+        flex-direction: column;
+        height: 897px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        align-items: center;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .social-media {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .social-media h2 {
+        font-size: 24px;
+        font-weight: 600;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-button {
+        width: 190px;
+        height: 50px;
+        margin: 0;
+
+    }
+
+    .social-button img {
+        width: 38px;
+        height: 38px;
+        margin: 0;
+    }
+
+    .social-button span {
+        font-size: 16px;
+    }
+
+    .contact-form {
+        width: 334px;
+        margin: 0;
+
+    }
+
+    .contact-form h2 {
+        margin-top: 20px;
+    }
+
+    .contact-form input {
+        width: 334px;
+        height: 50px;
+    }
+
+    .contact-form select {
+        width: 334px;
+        height: 50px;
+    }
+
+    .contact-form textarea {
+        width: 334px;
+        height: 50px;
+    }
+
+    .contact-form .submit-button {
+        width: 338px;
+        height: 51px;
+        font-size: 16px;
+    }
+
+    .social-media-box-left {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .location-section {
+        height: 700px;
+        flex-direction: column;
+        /* เปลี่ยนจากแสดงผลแนวนอนเป็นแนวตั้ง */
+        align-items: center;
+        /* จัดตำแหน่งปุ่มให้ตรงกลาง */
+    }
+
+    .location-box-left,
+    .location-box-right {
+        width: 100%;
+        /* ทำให้ทั้งสองกล่องมีขนาดเต็มความกว้างของหน้าจอ */
+        margin: 15px 0;
+        /* เพิ่มระยะห่างระหว่างกล่อง */
+    }
+
+    .location-box-right iframe {
+        width: 335px;
+        height: 236px;
+        /* ปรับขนาด iframe ให้เล็กลง */
+    }
+
+    .footer {
+        height: 264px;
+        width: 100%;
+        background-color: #ffff;
+        display: flex;
+        justify-content: flex-start;
+        /* Align to the left */
+        align-items: center;
+        margin-top: 27px;
+        margin-bottom: auto;
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+        text-align: left;
+        /* Align the text to the left */
+        padding-left: 20px;
+        /* Optional: add padding to the left */
+    }
+
+    #left,
+    #right {
+        width: 100%;
+        /* Ensure left and right elements take up full width */
+    }
+
+    #right {
+        display: flex;
+        justify-content: flex-start;
+        /* Align icons to the left */
+        align-items: center;
+    }
+
+    #right img {
+        margin-right: 10px;
+        /* Adjust icon spacing */
+        width: 25px;
+        margin-top: 10px;
+    }
+
+    #left p {
+        font-size: 14px;
+        color: #2F2F2F;
+        cursor: pointer;
+        margin-left: 0;
+        /* Adjust margin as needed */
+    }
+
+    #text-link {
+        flex-direction: column;
+        /* Stack text links vertically */
+        margin-top: 10px;
+    }
+
+    #left img {
+        width: 139.826px;
+        height: 30px;
+        
+    }
+
+    #icon-ph {
+        display: block;
+        /* Ensure it's displayed */
+        float: right;
+        /* Float it to the right */
+    }
+
+    #icon-ph img {
+        margin-right: 17px;
+    }
+
+    #menu {
+        justify-content: space-between;
+    }
+
+
+
+}

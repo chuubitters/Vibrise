@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vibrise</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="feature-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        #at-mode { display: none; }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            <a href="index.html"><div id="logo"></div></a>
+            <div id="icon-ph">
+                <img src="pics/hbg-icon.png" alt="">
+                <img src="pics/search-icon.png" alt="">
+            </div>
+            <div id="text">
+                <a href="index.html">
+                <p>หน้าหลัก</p>
+                </a>
+                <a href="featurepage.html">
+                <p>เพลง</p>
+                </a>
+               
+                <a href="contentpage.html">
+                <p>โหมดนักดนตรี</p>
+                </a>
+                <a href="contact.html">
+                <p>ติดต่อเรา</p>
+            </a>
+                <div class="container">
+                    <div class="searchInputWrapper">
+                        <input class="searchInput" type="text" placeholder="ค้นหา">
+                        <i class="searchInputIcon fa fa-search"></i>
+                    </div>
+                </div>
+                <div id="logobutton-con">ลงทะเบียน
+                    <div id="regis">เข้าสู่ระบบ</div>
+                </div>
+ 
+            </div>
+        </div>
+
+        <!-- แถบเพลงกำลังเล่น -->
+         <div id="np-bar">
+        <div class="now-playing-bar" id="now-playing-bar">
+            <div class="song-info">
+                <p class="title" id="song-title">No song playing</p>
+                <p class="author" id="song-artist">No artist</p>
+            </div>
+            <div class="controls">
+                <div id="play-btn" class="button"><i class="fas fa-play"></i></div>
+                <div id="mute-btn" class="button"><i class="fas fa-volume-up"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-w">
+        <div id="hp-icon-w"><img src="ft-pics/hp-w.svg"></div>
+        <span>การฟัง</span>
+    </div>
+    
+        <div class="right-w">
+            <div id="ms-icon-w"><img src="ft-pics/ms-w.svg"></div>
+            <span>นักดนตรี</span>
+          </div>
+
+        <div class="now-playing">
+            <div id="song-np">
+                <script src="https://kit.fontawesome.com/7c33dff1d8.js" crossorigin="anonymous"></script>
+                    <div class="player" id="player">
+                        <div id="music-info">
+                        </div>
+                        <div id="title">
+                            <div id="title1">
+                            <div id="text-tt">
+                            <p1>Die With A Smile</p1>
+                            <p2>Lady Gaga , Bruno Mars</p2>
+                            </div>
+                            <div id="heart-fav">
+                                <img src="ft-pics/heart.svg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- แถบเพลงกำลังเล่น (Progress Bar) -->
+                        <div class="progress-bar" id="progress-bar">
+                            <div class="progress" id="progress"></div>
+                            <div class="thumb" id="thumb"></div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="random">
+                                <img src="ft-pics/random.svg"></i>
+                            </div>
+                            <div class="backward">
+                                <i class="fas fa-step-backward"></i>
+                            </div>
+                            <div id="play-btn-inner" class="play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="forward">
+                                <i class="fas fa-step-forward"></i>
+                            </div>
+                            <div class="loop">
+                                <img src="ft-pics/loop.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="song-ly">
+                <div id="ly-content">
+                    <div id="ct">
+                    <p>(Ooh, ooh)</p>
+                    <p>I, I just woke up<br>
+                        from a dream</p>
+                    <p>Where you and I <br>
+                        had to say goodbye</p>
+                    <p>And I don't know <br>
+                        what it all means</p>
+                    <p>But since I survived,<br>
+                        I realized</p>
+                    <p>Wherever you go,<br>
+                        that's where I'll follow </p>
+                    <p>
+                        Nobody's promised tomorrow
+                    </p>
+                    <p>So I'ma love you every night like <br>it's the last night<br>
+                        Like it's the last night</p>
+                        <p>If the world was ending,<br> I'd wanna be next to you</p>
+                        <p>If the party was over and <br>our time on Earth was through</p>
+                    </div>
+                    <div id="icon-ly">
+                        <img src="ft-pics/icon-ly.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+       <div class="content">
+            <!-- Toggle switch -->
+            <label class="toggle">
+                <input id="toggleswitch" type="checkbox"> <!-- ปิด toggle switch เป็นค่าเริ่มต้น -->
+                <span class="roundbutton"><div class="left">
+                    <div id="hp-icon"><img src="ft-pics/iconamoon_headphone-fill.svg" alt=""></div>
+                    
+                    <span>การฟัง</span></div>
+                
+                    <div class="right">
+                        <div id="ms-icon"><img src="ft-pics/icon-ms.svg" alt=""></div>
+                        <span>นักดนตรี</span>
+                      </div>
+                    </span>
+            </label>
+
+            <!-- JavaScript to toggle content -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var input = document.getElementById('toggleswitch');
+                    var atMode = document.getElementById('at-mode');
+                    var lsMode = document.getElementById('ls-mode');
+                    var leftW = document.querySelector('.left-w');
+                    var rightW = document.querySelector('.right-w');
+            
+                    // ตั้งค่าสถานะเริ่มต้นตาม toggle switch ที่ปิดอยู่
+                    if (input.checked) {
+                        atMode.style.display = "block";
+                        lsMode.style.display = "none";
+                        leftW.style.display = "none";
+                        rightW.style.display = "block";
+                    } else {
+                        atMode.style.display = "none";
+                        lsMode.style.display = "block";
+                        leftW.style.display = "block";
+                        rightW.style.display = "none";
+                    }
+            
+                    input.addEventListener('change', function() {
+                        if (this.checked) {
+                            atMode.style.display = "block";
+                            lsMode.style.display = "none";
+                            leftW.style.display = "none";
+                            rightW.style.display = "block";
+                        } else {
+                            atMode.style.display = "none";
+                            lsMode.style.display = "block";
+                            leftW.style.display = "block";
+                            rightW.style.display = "none";
+                        }
+                    });
+                });
+            </script>
+            
+
+            <!-- Content for #at-mode and #ls-mode -->
+            <div id="ls-mode">
+                <div id="cv-chart">
+                    <div id="hd-text-box">
+                    <p>โคฟเวอร์ยอดนิยม</p>
+                    <img src="ft-pics/weui_arrow-outlined.svg" alt="">
+                </div>
+                <div id="cv-ch">
+                <div id="cover-h1"><img src="ft-pics/cover-h1.png"></div>
+                <img src="ft-pics/cover-h2.png">
+                <img src="ft-pics/cover-h3.png">
+                <img src="ft-pics/cover-h4.png">
+             </div>
+                </div>
+                <div id="cover">
+                    <div id="hd-text-box-cv">
+                    <p>โคฟเวอร์</p>
+                    <img src="ft-pics/weui_arrow-outlined.svg" alt="">
+                </div>
+                <div id="cv-content">
+
+
+                
+                <div id="cv-right-ct">
+                    <div id="cv-r-box">
+                    <div class="cv-row">
+                        <div class="cv-bt" style="width: 176px;">Acoustic</div>
+                        <div class="cv-bt" style="width: 211px;">Vocal Cover</div>
+                        <div class="cv-bt" style="width: 146px;">Mashup</div>
+                    </div>
+                    <div class="cv-row">
+                        <div class="cv-bt" style="width: 176px;">A cappella</div>
+                        <div class="cv-bt" style="width: 118px;">Guitar</div>
+                        <div class="cv-bt" style="width: 116px;">Piano</div>
+                        <div class="cv-bt" style="width: 128px;">Remix</div>
+                    </div>
+                    <div class="cv-row">
+                        <div class="cv-bt" style="width: 201px;">Instrumental</div>
+                        <div class="cv-bt" style="width: 274px;">Another language</div>
+                    </div>
+                    <div class="cv-row">
+                        <div class="cv-bt" style="width: 132px;">Choral</div>
+                        <div class="cv-bt" style="width: 75px;">All</div>
+                    </div>
+                    </div>
+                </div>
+
+                <div id="cv-left-ct">
+                    <div id="page-cv">
+                        <img src="ft-pics/humbleicons_arrow-up-l.svg" >
+                        <p1>1</p1>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>...</p>
+                        <p>9</p>
+                        <img src="ft-pics/humbleicons_arrow-up-r.svg" >
+                    </div>
+
+                    <div id="cover-box">
+                    <div id="cover1">
+                        <div id="cover1-pic"></div>
+                        <div id="cover1-text">
+                        <p1>Die With A Smile - Bruno<br>Mars, Lady Gaga (Cover)<br> ft. hongjoin</p>
+                        <p2>Emily Sie</p2></div>
+                        <div id="player-bt">
+                            <img src="ft-pics/player.svg" alt="">
+                        </div>
+                    </div>
+                    <div id="cover1">
+                        <div id="cover2-pic"></div>
+                        <div id="cover1-text">
+                        <p1>Die With A Smile - Bruno<br>Mars, Lady Gaga (Cover)<br> ft. hongjoin</p>
+                        <p2>Emily Sie</p2></div>
+                        <div id="player-bt">
+                            <img src="ft-pics/player.svg" alt="">
+                        </div>
+                    </div>                    
+                    <div id="cover1">
+                        <div id="cover3-pic"></div>
+                        <div id="cover1-text">
+                        <p1>Die With A Smile - Bruno<br>Mars, Lady Gaga (Cover)<br> ft. hongjoin</p>
+                        <p2>Emily Sie</p2></div>
+                        <div id="player-bt">
+                            <img src="ft-pics/player.svg" alt="">
+                        </div>
+                    </div>                    
+                    <div id="cover1">
+                        <div id="cover4-pic"></div>
+                        <div id="cover1-text">
+                        <p1>Die With A Smile - Bruno<br>Mars, Lady Gaga (Cover)<br> ft. hongjoin</p>
+                        <p2>Emily Sie</p2></div>
+                        <div id="player-bt">
+                            <img src="ft-pics/player.svg" alt="">
+                        </div>
+                    </div>                    
+                    <div id="cover1">
+                        <div id="cover5-pic"></div>
+                        <div id="cover1-text">
+                        <p1>Die With A Smile - Bruno<br>Mars, Lady Gaga (Cover)<br> ft. hongjoin</p>
+                        <p2>Emily Sie</p2></div>
+                        <div id="player-bt">
+                            <img src="ft-pics/player.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <script>document.querySelectorAll('.cv-bt').forEach(button => {
+                    button.addEventListener('click', () => {
+                        button.classList.toggle('clicked');
+                    });
+                });
+                </script>
+
+
+
+                </div>
+            </div>
+
+            <div id="abt-at">
+                <div id="abt-left">
+                    <div id="hd-text-box-at">
+                        <p>เกี่ยวกับศิลปิน</p>
+                        <img src="ft-pics/weui_arrow-outlined.svg" alt="">
+                    </div>
+                </div>
+                <div id="abt-right">
+                    <div id="abt-r-text">
+                    <p1>Lady Gaga<br></p1>
+                    <p2>New York, NY, United Statesㆍ28<br>March 1986ㆍPop<br></p2>
+                    <p3><br>Some may dismiss pop as inauthentic. But for<br>Lady Gaga--one of popular culture's greatest,<br>most extravagant creations--the inauthenticity is<br>the point. No artist has more defiantly<br>embodied that provocation this century than the<br>one born Stefani Joanne Angelina<br> 
+                        
+                        <br>Germanotta (in New York in 1986). Never wedded<br> to the same image--her most memorable<br>
+                        looks (among many) have included a gown<br> fashioned from raw meat, a red-carpet-<br>
+                        appropriate pair of dish gloves and "the world's<br> first flying dress"--Gaga personities pop's<br>
+                        surface obsessions while simultaneously upending<br> them. In a sense, her creative identity<br>
+                        had crystallised by age 21; she'd been a child<br> pianist, aspiring actor and burlesque</p3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="merch">
+                <div id="merch-head"><p>รายการสินค้า</p> 
+                    <div id="arrow-w">
+                        <img src="ft-pics/arrow-w.svg" alt="">
+                    </div>
+                </div>
+            
+                <!-- รายการสินค้า 1 -->
+                <div id="merch1">
+                    <div id="m1-pic">
+                        <div id="gallerywrapper">
+                            <div id="gallery">
+                                <div id="m1-pic1">
+                                    <img src="ft-pics/merch1-photo.png">
+                                    <a class="previous" href="#m1-pic2">&lt;</a>
+                                    <a class="next" href="#m1-pic2">&gt;</a>
+                                </div>
+                                <div id="m1-pic2">
+                                    <img src="ft-pics/merch1-photo.2.png">
+                                    <a class="previous" href="#m1-pic1">&lt;</a>
+                                    <a class="next" href="#m1-pic1">&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="text-m1">
+                        <p1>Love For Sale Vinyl</p1>
+                        <div id="tl">
+                            <p>Tracklist:</p>
+                            <p2>Side A<br>1. It's De-Lovely<br>2. Night and Day</p2>
+                            <p2>Side B<br>6. I Get a Kick Out of You<br>7. So In Love</p2>
+                        </div>
+                        <div id="price">
+                            <p>USD</p>
+                            <p2>US$26.00</p2>
+                        </div>
+                        <div class="select-menu">
+                            <p>สี</p>
+                            <div class="select">
+                                <span>สี</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="options-list">
+                                <div class="option">black</div>
+                                <div class="option">white</div>
+                            </div>
+                            <p>จำนวน</p>
+                            <div class="select2">
+                                <span>จำนวน</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="options-list">
+                                <div class="option">1</div>
+                                <div class="option">2</div>
+                                <div class="option">3</div>
+                                <div class="option">4</div>
+                                <div class="option">5</div>
+                            </div>
+                        </div>
+                        <div id="merch1-button">
+                            <div id="chart">
+                                เพิ่มลงในรถเข็น
+                            </div>
+                            <div id="buynow">
+                                ซื้อเลย
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- รายการสินค้า 2 -->
+                <div id="merch2">
+                    <!-- Copy and adjust content similar to merch1 -->
+                    <div id="m2-pic">
+                        <div id="gallerywrapper">
+                            <div id="gallery">
+                                <div id="m2-pic1">
+                                    <img src="ft-pics/merch2-photo.png">
+                                    <a class="previous" href="#m2-pic2">&lt;</a>
+                                    <a class="next" href="#m2-pic2">&gt;</a>
+                                </div>
+                                <div id="m2-pic2">
+                                    <img src="ft-pics/merch2-photo.2.png">
+                                    <a class="previous" href="#m2-pic1">&lt;</a>
+                                    <a class="next" href="#m2-pic1">&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="text-m2">
+                        <p1>Album Vinyl 2</p1>
+                        <div id="tl">
+                            <p>Tracklist:</p>
+                            <p2>Side A<br>1. Song 1<br>2. Song 2</p2>
+                            <p2>Side B<br>6. Song 3<br>7. Song 4</p2>
+                        </div>
+                        <div id="price">
+                            <p>USD</p>
+                            <p2>US$30.00</p2>
+                        </div>
+                        <div class="select-menu">
+                            <p>สี</p>
+                            <div class="select">
+                                <span>สี</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="options-list">
+                                <div class="option">black</div>
+                                <div class="option">blue</div>
+                            </div>
+                            <p>จำนวน</p>
+                            <div class="select2">
+                                <span>จำนวน</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="options-list">
+                                <div class="option">1</div>
+                                <div class="option">2</div>
+                                <div class="option">3</div>
+                                <div class="option">4</div>
+                                <div class="option">5</div>
+                            </div>
+                        </div>
+                        <div id="merch2-button">
+                            <div id="chart">
+                                เพิ่มลงในรถเข็น
+                            </div>
+                            <div id="buynow">
+                                ซื้อเลย
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- รายการสินค้า 3 -->
+                <div id="merch3">
+                    <!-- Copy and adjust content similar to merch1 -->
+                    <div id="m3-pic">
+                        <div id="gallerywrapper">
+                            <div id="gallery">
+                                <div id="m3-pic1">
+                                    <img src="ft-pics/merch3-photo.png">
+                                    <a class="previous" href="#m3-pic2">&lt;</a>
+                                    <a class="next" href="#m3-pic2">&gt;</a>
+                                </div>
+                                <div id="m3-pic2">
+                                    <img src="ft-pics/merch3-photo.2.png">
+                                    <a class="previous" href="#m3-pic1">&lt;</a>
+                                    <a class="next" href="#m3-pic1">&gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="text-m3">
+                        <p1>Album Vinyl 3</p1>
+                        <div id="tl">
+                            <p>Tracklist:</p>
+                            <p2>Side A<br>1. Song A<br>2. Song B</p2>
+                            <p2>Side B<br>6. Song C<br>7. Song D</p2>
+                        </div>
+                        <div id="price">
+                            <p>USD</p>
+                            <p2>US$28.00</p2>
+                        </div>
+                        <div class="select-menu">
+                            <p>สี</p>
+                            <div class="select">
+                                <span>สี</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="options-list">
+                                <div class="option">red</div>
+                                <div class="option">yellow</div>
+                            </div>
+                            <p>จำนวน</p>
+                            <div class="select2">
+                                <span>จำนวน</span>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="options-list">
+                                <div class="option">1</div>
+                                <div class="option">2</div>
+                                <div class="option">3</div>
+                                <div class="option">4</div>
+                                <div class="option">5</div>
+                            </div>
+                        </div>
+                        <div id="merch3-button">
+                            <div id="chart">
+                                เพิ่มลงในรถเข็น
+                            </div>
+                            <div id="buynow">
+                                ซื้อเลย
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>document.querySelectorAll('.select').forEach((select, index) => {
+                    const optionsList = select.nextElementSibling; // ค้นหา options-list ที่ใกล้ที่สุด
+                    const options = optionsList.querySelectorAll('.option');
+                  
+                    // คลิกเพื่อแสดงหรือซ่อน options
+                    select.addEventListener('click', () => {
+                      optionsList.classList.toggle('active');
+                      select.querySelector('.fa-angle-down').classList.toggle('fa-angle-up');
+                    });
+                  
+                    // เลือก option
+                    options.forEach((option) => {
+                      option.addEventListener('click', () => {
+                        options.forEach((opt) => opt.classList.remove('selected'));
+                        select.querySelector('span').innerHTML = option.innerHTML;
+                        option.classList.add('selected');
+                        optionsList.classList.remove('active');
+                        select.querySelector('.fa-angle-down').classList.toggle('fa-angle-up');
+                      });
+                    });
+                  });
+                  
+                  document.querySelectorAll('.select2').forEach((select2, index) => {
+                    const optionsList2 = select2.nextElementSibling; // ค้นหา options-list ที่ใกล้ที่สุด
+                    const options2 = optionsList2.querySelectorAll('.option');
+                  
+                    // คลิกเพื่อแสดงหรือซ่อน options
+                    select2.addEventListener('click', () => {
+                      optionsList2.classList.toggle('active');
+                      select2.querySelector('.fa-angle-down').classList.toggle('fa-angle-up');
+                    });
+                  
+                    // เลือก option
+                    options2.forEach((option) => {
+                      option.addEventListener('click', () => {
+                        options2.forEach((opt) => opt.classList.remove('selected'));
+                        select2.querySelector('span').innerHTML = option.innerHTML;
+                        option.classList.add('selected');
+                        optionsList2.classList.remove('active');
+                        select2.querySelector('.fa-angle-down').classList.toggle('fa-angle-up');
+                      });
+                    });
+                  });
+                  
+                  </script>
+            </div>
+            
+        </div> 
+
+        <div id="at-mode">
+            <div id="ct-1">
+                <div id="vl-ct">
+                    <div id="vl-top">
+                       <p>ฟังก์ชั่นแยกเสียง</p>
+                        <img src="ft-pics/volume1.png">
+                    </div>
+                    <div id="vl-bttm">
+                        <p>คีย์และความเร็ว</p>
+                        <img src="ft-pics/volume2.png" >
+                    </div>
+                </div>
+                <div id="loop-ct">
+                    <img src="ft-pics/loop-ct.png">
+                </div>
+            </div>
+            <div id="content">
+                <div id="head-text">
+                <div id="cord-p">คอร์ดเพลง</div>
+                <p>โน๊ต</p>
+                <p>คำแปลเนื้อร้อง</p>
+                <p>คลิปสอน</p>
+            </div>
+
+            <div id="head-fil">
+                <img src="ft-pics/head-fil.png" alt="">
+            </div>
+            <div id="head-fil-ph">
+                <img src="ft-pics/head-fil-ph.png" alt="">
+            </div>
+
+            
+            <div id="post">
+                <img src="ft-pics/person1.png">
+                <img src="ft-pics/person2.png">
+                <img src="ft-pics/person1.png">
+                <img src="ft-pics/person2.png">
+            </div>
+
+            <div id="post-phone">
+                <img src="ft-pics/person1-ph.png">
+                <img src="ft-pics/person2-ph.png">
+            </div>
+
+            </div>
+
+            <div id="tut">
+                <div id="head-tut">
+                    <p>คลิปสอนยอดนิยม</p>
+                    <img src="ft-pics/weui_arrow-outlined.svg" alt="">
+                </div>
+                <div id="tut-box">
+                    <div id="tut1"><img src="ft-pics/cover-ch.png" alt=""></div>
+                <img src="ft-pics/cover-ch2.png" alt="">
+                <img src="ft-pics/cover-ch3.png" alt="">
+                <img src="ft-pics/cover-ch4.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="left">
+            
+            <a href="index.html"><img src="pics/logo-menu.png"></a></1a>
+            <p>Copyright © 2024 Vibrise Inc.All right rederved</p>
+            <div id="text-link">
+            <p>กฎหมาย</p>
+            <p>ศูนย์ความปลอดภัยและความเป็นส่วนตัว</p>
+            <p>นโยบายความเป็นส่วนตัว</p>
+            <p>คุกกี้</p>
+            <p>เกี่ยวกับโฆษณา</p>
+            <p>การเข้าถึง</p>
+            </div>
+            </div>
+            <div id="right">
+                <img src="pics/footer-logo1.png">
+
+                <img src="pics/footer-logo2.png">
+                <img src="pics/footer-logo3.png">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let audioList = [
+            {
+                title: "Die With A Smile",
+                album: "Lady Gaga",
+                author: "Lady Gaga",
+                source: "music/Die With A Smile.mp3",
+                type: "audio/mpeg"
+            }
+        ];
+
+        let currentAudio;
+        let playBtn = document.getElementById("play-btn-inner"); // แก้ไขให้ตรงกับ id ที่ใช้
+        let muteBtn = document.getElementById("mute-btn");
+        let songTitle = document.getElementById("song-title");
+        let songArtist = document.getElementById("song-artist");
+        let progressBar = document.getElementById("progress-bar");
+        let progress = document.getElementById("progress");
+        let thumb = document.getElementById("thumb");
+
+        // ฟังก์ชันการโหลดเพลง
+        function loadAudio(audio = 0){
+            if(currentAudio){
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+            songTitle.innerHTML = audioList[audio].title;
+            songArtist.innerHTML = audioList[audio].author;
+            currentAudio = new Audio(audioList[audio].source);
+        }
+
+        // ฟังก์ชันการอัพเดตแถบ progress
+        function updateProgress(){
+            let progressWidth = (currentAudio.currentTime / currentAudio.duration) * 100;
+            progress.style.width = progressWidth + "%";
+            thumb.style.left = `calc(${progressWidth}% - 10px)`;
+        }
+
+        // ฟังก์ชันการเล่น/หยุดเพลง
+        playBtn.addEventListener("click", function(){
+            if(currentAudio.paused){
+                playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                currentAudio.play();
+            } else {
+                playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                currentAudio.pause();
+            }
+        });
+
+        // ฟังก์ชัน mute/unmute
+        muteBtn.addEventListener("click", function(){
+            if(!currentAudio.muted){
+                muteBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                currentAudio.muted = true;
+            } else {
+                muteBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                currentAudio.muted = false;
+            }
+        });
+
+        // ฟังก์ชันเปลี่ยนตำแหน่งเพลงจากแถบ
+        thumb.addEventListener("mousedown", function(event) {
+            let offsetX = event.offsetX;
+            let maxWidth = progressBar.offsetWidth;
+            let newTime = (offsetX / maxWidth) * currentAudio.duration;
+            currentAudio.currentTime = newTime;
+        });
+
+        // เรียกใช้งานฟังก์ชันเริ่มต้น
+        (function load(){
+            loadAudio();
+            setInterval(updateProgress, 100);
+        })();
+
+        currentAudio.addEventListener("ended", function(){
+            playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        });
+    </script>
+</body>
+</html>
