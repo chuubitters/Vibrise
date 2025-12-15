@@ -1,0 +1,1295 @@
+@font-face {
+    font-family: skv;
+    src: url(fonts/SukhumvitSet-Light.ttf);
+}
+
+@font-face {
+    font-family: skvb;
+    src: url(fonts/SukhumvitSet-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: skv;
+    text-decoration: none;
+
+}
+
+#element-box a {
+    text-decoration: none;
+}
+
+#element-box {
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 1440px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+
+
+    width: 1440px;
+    height: 90px;
+
+    box-shadow: 0px -1px 21.1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 50px 50px;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 999999;
+}
+
+
+#logobutton-con {
+
+width: 236px;
+height: 50px;
+margin-left: 10px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 100px;
+
+display: flex;
+margin-top: auto;
+margin-bottom: auto;
+align-items: center;
+padding-left: 14px;
+
+}
+
+#icon-ph {
+    display: none;
+}
+
+#regis {
+
+width: 118px;
+height: 50px;
+float: right;
+justify-content: center;
+align-items: center;
+display: flex;
+margin: auto;
+font-weight: 600;
+font-size: 24px;
+line-height: 38px;
+margin-left: 6px;
+
+color: #FFFFFF;
+
+
+background: #787AFF;
+border-radius: 100px;
+
+}
+
+#logo {
+    height: 49px;
+    width: 214.03px;
+    margin-left: 47px;
+    background-image:url(pics/logo-menu.png);
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    margin-left: 37px;
+
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#text p {
+    margin-right: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchInputWrapper {
+    position: relative;
+    display: flex;
+}
+
+.searchInputWrapper {
+    position: relative;
+    display: flex;
+}
+
+.searchInput {
+    width: 250px; /* Updated for a wider search box */
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 30px; /* Rounded corners similar to the image */
+    padding-left: 20px;
+    font-size: 16px;
+    border: none; /* Removes border */
+}
+
+::placeholder {
+    color: #a1a1a1;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchInputIcon {
+    position: absolute;
+    right: 20px; /* Position icon on the right */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c63ff; /* Color to match the purple icon in the screenshot */
+    font-size: 18px; /* Adjusted size */
+}
+
+
+.now-playing {
+    width: 100%;
+    height: 894px;
+    background-image: url(pics/bg-home.png);
+    float: left;
+    margin-top: 90px;
+}
+#song-pic {
+    margin-top: 69px;
+    margin-left: 260px;
+}
+
+.for-you {
+    height: 710px;
+    width: 100%;
+}
+
+.for-you p {
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+    margin-left: 101px;
+    color: #000000;
+
+}
+
+#song-for-you-box {
+    display: flex;
+    margin-right: 20px;
+    overflow-y: auto;
+    width: 100%;
+    height: 486px;
+    overflow-y: hidden;
+    margin-top: 49px;
+  }
+  
+#song-for-you-box img {
+    margin-right: 20px;
+}
+  
+#pic1 {
+    margin-left: 101px;
+}
+
+.artist-mode {
+    display: flex; /* Add this line */
+    flex-direction: column; /* Add this line */
+    align-items: center; /* Add this line */
+    justify-content: center;
+    width: 100%;
+    height: 648px;
+    background: linear-gradient(180deg, #F5F5F7 0%, #787AFF 100%);
+  }
+  
+  .artist-mode p {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+    color: #000000;
+  }
+  
+  #element-box {
+    display: flex;
+    justify-content: center; /* Add this line */
+  }
+
+
+
+  .mood-mixed {
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 934px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding-left: 20px; /* Add some padding to the left to keep spacing */
+}
+
+.mood-mixed p {
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px; /* Space between the paragraph and mood box */
+    margin-left: 101px;
+}
+
+#mood-box {
+    display: flex;
+    margin-right: 20px;
+    width: 100%;
+    overflow-y: hidden;
+    justify-content: center; /* Center the mood-box horizontally */
+}
+
+#mood-box img {
+    margin-right: 20px;
+}
+
+#pic1-mood {
+    margin-left: 245px;
+    margin-top: 51px;
+}
+
+#mood-box img {
+    margin-right: 20px;
+}
+
+#pic2-mood {
+    margin-bottom: 51px;
+}
+
+#pic3-mood {
+    margin-top: 51px;
+}
+  
+
+.recent {
+    width: 100%;
+    height: 710px;
+    background-color: #787AFF;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#recent1{
+
+
+    width: 371px;
+    height: 486px;
+
+    background-color: #000000;
+    border-radius: 50px;
+    margin-right:20px ;
+
+}
+
+#recent1 p{
+
+    font-weight: 400;
+    font-size: 16px;
+    
+    color: #FFFFFF;
+    
+
+}
+#recent1 p1{
+
+    font-weight: 400;
+    font-size: 16px;
+    
+    color: #FFFFFF;
+    
+
+}
+
+
+
+#recent-box {
+    display: flex;
+    margin-right: 20px;
+    overflow-y: auto;
+    width: 100%;
+    height: 486px;
+    overflow-y: hidden;
+    margin-top: 42px;
+  }
+  
+#recent-box img {
+    margin-right: 20px;
+}
+
+.recent p {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+    margin-left: 101px;
+    color: #ffff;
+    margin-top: 74px;
+}
+
+
+
+.your-playlist {
+    height: 690px;
+    width: 100%;
+}
+
+.your-playlist p {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+    margin-left: 101px;
+    color: #000000;
+    margin-top: 74px;
+}
+
+/* Center the text and rows */
+.playist-for-you {
+    height: 763px;
+    width: 100%;
+    background: linear-gradient(105.11deg, #787AFF 3.11%, #B4BFFF 57.38%, #79CDFF 95.2%);
+    text-align: center; /* Center text and elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.playist-for-you p {
+    color: #ffff;
+    font-size: 24px; /* Adjust font size if needed */
+    margin-bottom: 20px; /* Space between title and row */
+}
+
+#urplaylist-1, #urplaylist-2 ,#urplaylist-3, #urplaylist-4,#urplaylist-5,#urplaylist-6 {
+    box-sizing: border-box;
+    width: 530px;
+    height: 158px;
+    background: #E5E5F3;
+    border: 1px solid #C6C6D5;
+    border-radius: 200px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Keep horizontal alignment as it is */
+    padding-left: 8px; /* Optional: add padding to keep some space on the left */
+    margin-top: 41px;
+}
+
+#urplaylist-1 img, #urplaylist-2 img,#urplaylist-3 img,#urplaylist-4 img,#urplaylist-5 img,#urplaylist-6 img  {
+    display: block; /* Ensure the image behaves like a block-level element */
+}
+
+#pl-row1 {
+    margin-left: 62px;
+}
+
+#pl-row1, #pl-row2,#pl-row3{
+    flex-direction: column;
+    margin-right: 23px;
+}
+
+#urplaylist-1 p1,#urplaylist-2 p1,#urplaylist-3 p1,#urplaylist-4 p1,#urplaylist-5 p1,#urplaylist-6 p1 {
+    font-size: 24px;
+}
+#urplaylist-1 p2,#urplaylist-2 p2 {
+    font-size: 16px;
+}
+
+#pl-text {
+    flex-direction: column;
+    margin-left: 23px;
+}
+
+#row1, #row2 {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the rows */
+    margin-bottom: 18px;
+}
+
+.urplaylist-box {
+    display: flex;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* Animation and marquee styling */
+body {
+
+  --space: 18px; /* Updated spacing between images */
+}
+
+.marquee {
+  --duration: 60s;
+  --gap: var(--space); /* Use the updated gap */
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap); /* Space between marquee groups */
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap); /* Space between individual images set to 18px */
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+/* Reverse marquee direction for row2 */
+.marquee-reverse .marquee__group {
+  animation: scrollReverse var(--duration) linear infinite;
+}
+
+.marquee_g {
+  max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Keyframe for normal scroll (right to left) */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/* Keyframe for reverse scroll (left to right) */
+@keyframes scrollReverse {
+  0% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.banner {
+    height: 1185px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+    background-image: url(pics/banner-bg.png);
+}
+
+.banner h1 {
+    font-family: skvb;
+}
+
+.section {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically center the content */
+    text-align: center; /* Align the text to the center */
+}
+
+.header {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.2s ease-out;
+}
+
+
+.headerVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#left {
+    width: 50%;
+}
+
+#text a {
+    color: #000000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#urplaylist-1 ,#urplaylist-2,#urplaylist-3,#urplaylist-4,#urplaylist-5,#urplaylist-6 {
+    cursor: pointer;
+}
+#button {
+/* Rectangle 139 */
+
+cursor: pointer;
+position: absolute;
+width: 229px;
+height: 71px;
+left: calc(50% - 229px/2 - 535.5px);
+top: 728px;
+
+background: #787AFF;
+border-radius: 100px;
+
+justify-content: center;
+align-items: center;
+display: flex;
+margin: auto;
+
+font-style: normal;
+font-weight: 410;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFFFFF;
+
+
+}
+
+
+#playing {
+position: absolute;
+left: 492px;
+top: 445px;
+
+
+}
+
+#right-button {
+    position: absolute;
+    left: 972px;
+    top: 155px;
+}
+
+#rb-1:hover, #rb-2:hover,#rb-3:hover,#rb-4:hover,#rb-5:hover  {
+
+    background: linear-gradient(270deg, #787AFF 0%, #FE9AB1 100%);
+
+    width: 405px;
+    height: 104px;
+
+    border: none;
+    transition: .2s opacity;
+    opacity: 1;
+
+}
+
+#now-playing-bar {
+    display: none;
+}
+
+#rb-1, #rb-2,#rb-3,#rb-4,#rb-5 {
+    transition: .2s ;
+    opacity: 1;
+cursor: pointer;
+box-sizing: border-box;
+
+width: 405px;
+height: 104px;
+
+border: 1px solid #000000;
+border-radius: 132.773px;
+
+font-style: normal;
+font-weight: 410;
+font-size: 36px;
+
+
+color: #000000;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+text-transform: uppercase;
+margin: auto;
+justify-content: center;
+align-items: center;
+display: flex; 
+margin-bottom:10px ;
+}
+
+.loop , .random {
+    height: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .random {
+    margin-right: 50px;
+  }
+  .backward , .play , .forward {
+    color: #fff;
+    font-size: 44px;
+    margin-right: 50px;
+  }
+  
+  #song-np {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .player{
+    width: 420px;
+    height: 666px;
+    align-items: center;
+    margin-top: 210px;
+  }
+  .player #music-info{
+    width: 420px;
+    height: 420px;
+    background-image: url(ft-pics/np-s.png);
+  }
+  
+  #title1{
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  
+  #heart-fav {
+    margin-top: 19px;
+  }
+  
+  
+  .buttons {
+    display: flex;
+  }
+  
+  /* แถบเลื่อนเพลง */
+  .progress-bar {
+    width: 100%;
+    height: 3px;  /* ปรับให้บางลง */
+    background-color: #838383;  /* สีเทา */
+    position: relative;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar .progress {
+    height: 100%;
+    background-color: #ffffff;  /* สีขาว */
+    width: 0%;
+    border-radius: 5px;
+  }
+  
+  .progress-bar .thumb {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 3px;  /* ปรับให้บางลง */
+    height: 3px;  /* ปรับให้บางลง */
+    background-color: #ffffff;  /* สีขาว */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+#title {
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 480px;
+}
+
+
+#text-tt {
+    display: flex;
+    flex-direction: column;
+}
+
+  #song-np, #song-ly {
+    width: 50%; 
+    height: 100%;
+  }
+  
+  #song-ly p{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    margin-top:  61px;
+  }
+  
+  #song-ly #ct {
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 88px;
+    overflow-y: scroll;
+    width: 720px;
+    height: 807px;
+  }
+  
+  #title p1 {
+    margin-top: 19px;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 410;
+    line-height: normal;
+  }
+  
+  #loop-ct {
+    margin-top: 90px;
+  }
+  
+  #title p2 {
+    color: #C7C7C7;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 410;
+    line-height: normal;
+  }
+  
+  #play-btn-inner {
+    position: relative; /* หรือ absolute ถ้าจำเป็น */
+    z-index: 10000; /* ตั้งค่า z-index ให้สูงเพื่อให้แน่ใจว่าปุ่มอยู่ด้านบน */
+    cursor: pointer; /* เพิ่ม cursor pointer เพื่อบ่งบอกว่าเป็นปุ่ม */
+}
+.progress-bar {
+    position: relative;
+    z-index: 9999; /* ตั้งค่าให้แถบ progress อยู่ด้านบนถ้าจำเป็น */
+}
+
+
+
+.footer {
+    height: 264px;
+    width: 100%;
+    background-color: #ffff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#left p {
+font-weight: 400;
+font-size: 14px;
+color: #2F2F2F;
+margin-left: 18px;
+cursor: pointer;
+
+}
+
+#text-link {
+    display: flex;
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right img {
+    margin-right: 27px;
+}
+
+#element1, #element2, #element3 {
+    width: 420px;
+    height: 377px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensure content is left-aligned initially */
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin-right: 20px;
+    position: relative; /* Important for absolute positioning inside */
+    cursor: pointer;
+}
+
+#element1 img, #element2 img, #element3 img {
+    position: absolute; /* Use absolute positioning */
+    right: 10px; /* Push the image to the right edge */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Center vertically */
+    height: auto;
+}
+
+#element1 p, #element2 p, #element3 p {
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative; /* Keep it relative within the parent */
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+    color: #000000;
+    z-index: 2;
+}
+
+#element2 p {
+
+    margin-left: 42px;
+
+
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+
+    color: #000000;
+
+}
+
+#pl-row1 a{
+    color: #000000;
+}
+
+#element3 p{
+
+    margin-left: 42px;
+
+
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 51px;
+
+    color: #000000;
+
+}
+
+#playing-ph {
+    display: none;
+}
+
+.marquee__group img {
+    width: auto; /* Or whatever your default size is */
+    height: auto; /* Or whatever your default size is */
+}
+
+#icon {
+
+position: absolute;
+width: 67px;
+height: 67px;
+left: 610px;
+top: 172px;
+
+
+}
+
+#menu {
+    position: fixed;
+    background-color: #FFFFFF;
+}
+
+
+@media screen and (max-width:960px) {
+
+    #text, .container {
+        display: none;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    #logo {
+        height: 27.03px;
+        width: 126.85px;
+        background-image:url(pics/logo-menu-ph.png);
+        margin-left: 17px; 
+    }
+
+    #menu {
+        height: 98px;
+        border-radius: 0;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+
+    #icon img {
+        width: 37.32px;
+        height: 37.32px;
+    }
+
+    #icon {
+
+    position: absolute;
+
+    left: 166px;
+    top: 131px;
+
+
+    }
+
+    .now-playing {
+        height: 744px;
+        background :url(pics/bg-np-phone.png)
+    }
+   
+    #playing{
+        display: none;
+    }
+
+    #playing-ph {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    #right-button {
+        position: static;
+        margin-top: 30px;
+    }
+
+    #rb-1, #rb-2, #rb-3, #rb-4, #rb-5 {
+        width: 197px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    #rb-1:hover, #rb-2:hover, #rb-3:hover, #rb-4:hover, #rb-5:hover {
+        width: 197px;
+        height: 40px;
+    }
+    #button {
+        position: static;
+        width: 142.13px;
+        height: 44.07px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+
+    #song-pic {
+        margin-left: 18px;
+        margin-top: 20px;
+    }
+    #song-pic img {
+        width: 185px;
+    }
+
+    .for-you p {
+        font-size: 16px;
+        margin-left: 37px;
+        margin-bottom: 23px;
+    }
+
+    .for-you {
+        height: 353px;
+    }
+
+    #song-for-you-box {
+        margin: 0;
+    }
+
+    #song-for-you-box img{
+        width: 185.02px;
+        height: 243.7px;
+
+    }
+
+    #pic1{
+        margin-left: 37px;
+    }
+
+    .artist-mode p{
+        font-size: 16px;
+        margin-bottom: 29px;
+    }
+
+    #element-box {
+        flex-direction: column;
+    }
+
+    #element1,#element2,#element3 {
+
+    width: 324px;
+    height: 148px;
+
+    margin-bottom: 27px;
+
+
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    }
+
+    #element1 p,#element2 p,#element3 p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #element1 img {
+        width: 86px;
+        height: 149px;
+        margin-right: 21px;
+    }
+    
+    #element2 img {
+       width: 109px;
+       height: 141px; 
+       margin-right: 21px;
+    }
+
+    #element3 img {
+        width: 74px;
+        height: 148px;
+        margin-right: 21px;
+    }
+
+    .artist-mode{
+        height: 648px;
+    }
+
+    .mood-mixed p {
+        font-size: 16px;
+        margin-left: 37px;
+    }
+
+    #pic1-mood img,#pic2-mood img,#pic3-mood img {
+        width: 91.46px;
+        height: 268.43px;
+        margin-right: 9px;
+    }
+
+    #pic1-mood img{
+        margin-left: 102px;
+    }
+
+    .mood-mixed{
+        height: 450px;
+    }
+
+    .recent{
+        height: 363px;
+    }
+
+    .recent p{
+        font-size: 16px;
+        margin-left: 37px;
+        margin-top: 26px;
+    }
+
+    #recent-box {
+        margin: 0;
+    }
+
+    #recent-box img {
+        width: 183.09px;
+        height: 239.84px;
+        margin-right: 10px;
+    }    
+
+    .your-playlist {
+        height: 328px;
+    }
+
+    .your-playlist p {
+        font-size: 16px;
+        margin-left: 37px;
+        margin-top: 35px;
+    }
+
+    #urplaylist-1,#urplaylist-2, #urplaylist-3, #urplaylist-4, #urplaylist-5,#urplaylist-6 {
+        width: 171.7px;
+        height: 51.21px;
+
+        padding-left: 2px;
+        margin: 0;
+
+    }
+
+    #urplaylist-1 p1,
+    #urplaylist-2 p1,
+    #urplaylist-3 p1,
+    #urplaylist-4 p1,
+    #urplaylist-5 p1,
+    #urplaylist-6 p1{
+        font-size: 16px;
+    }
+
+    #urplaylist-1 p2,
+    #urplaylist-2 p2,
+    #urplaylist-3 p2,
+    #urplaylist-4 p2,
+    #urplaylist-5 p2,
+    #urplaylist-6 p2{
+        font-size: 10px;
+    }
+
+    #urplaylist-1 img,
+    #urplaylist-2 img,
+    #urplaylist-3 img,
+    #urplaylist-4 img,
+    #urplaylist-5 img,
+    #urplaylist-6 img{
+        width: 45px;
+        height: 45px;
+    }
+
+    #pl-text {
+        margin-left: 3px;
+    }
+
+    #pl-row1{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #pl-row2{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #pl-row3{
+        display: flex;
+        flex-direction: row;
+        margin: 0; 
+    }
+
+    .urplaylist-box {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+    }
+
+    #urplaylist-2 ,
+    #urplaylist-4 ,
+    #urplaylist-6{
+        margin-left: 9px;
+    }
+
+    #pl-row1,
+    #pl-row2,
+    #pl-row3 {
+        margin-bottom: 10px
+    }
+
+    #marquee__group {
+        width: 218.53px;
+        height: 141.53px;
+    }
+    .marquee__group img {
+        width: 218.53px; /* Set the width */
+        height: 141.53px; /* Set the height */
+    }
+
+    .playist-for-you {
+        height: 397px;
+    }
+
+    .playist-for-you p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .banner {
+        height: 590px;
+        background : url(pics/banner-bg-phone.png)
+    }
+
+    .banner h1 {
+
+    font-style: normal;
+    font-weight: 590;
+    font-size: 16px;
+    line-height: 19px;
+     font-family: skvb;
+
+    color: #000000;
+
+
+    }
+
+    .footer {
+        height: 264px;
+        width: 100%;
+        background-color: #ffff; 
+        display: flex;
+        justify-content: flex-start; /* Align to the left */
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: left; /* Align the text to the left */
+        padding-left: 20px; /* Optional: add padding to the left */
+    }
+
+    #left, #right {
+        width: 100%; /* Ensure left and right elements take up full width */
+    }
+
+    #right {
+        display: flex;
+        justify-content: flex-start; /* Align icons to the left */
+        align-items: center;
+    }
+
+    #right img {
+        margin-right: 10px; /* Adjust icon spacing */
+        width: 25px;
+        margin-top: 10px;
+    }
+
+    #left p {
+        font-size: 14px;
+        color: #2F2F2F;
+        cursor: pointer;
+        margin-left: 0; /* Adjust margin as needed */
+    }
+
+    #text-link {
+        flex-direction: column; /* Stack text links vertically */
+        margin-top: 10px;
+    }
+
+    #left img {
+        width: 93.22px;
+        height: 20px;
+    }
+
+    #icon-ph {
+        display: block; /* Ensure it's displayed */
+        float: right; /* Float it to the right */
+    }
+
+    #icon-ph img{
+        margin-right: 17px;
+    }
+
+    #menu {
+        justify-content: space-between;
+    }
+}

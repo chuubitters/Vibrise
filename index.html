@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vibrise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            <a href="index.html"><div id="logo"></div></a>
+            <div id="icon-ph">
+                <img src="pics/hbg-icon.png" alt="">
+                <img src="pics/search-icon.png" alt="">
+            </div>
+            <div id="text">
+                <a href="index.html">
+                <p>หน้าหลัก</p>
+                </a>
+                <a href="featurepage.html">
+                <p>เพลง</p>
+                </a>
+               
+                <a href="contentpage.html">
+                <p>โหมดนักดนตรี</p>
+                </a>
+                <a href="contact.html">
+                <p>ติดต่อเรา</p>
+            </a>
+                <div class="container">
+                    <div class="searchInputWrapper">
+                        <input class="searchInput" type="text" placeholder="ค้นหา">
+                        <i class="searchInputIcon fa fa-search"></i>
+                    </div>
+                </div>
+                <div id="logobutton-con">ลงทะเบียน
+                    <div id="regis">เข้าสู่ระบบ</div>
+                </div>
+ 
+            </div>
+        </div>
+
+        <div class="now-playing-bar" id="now-playing-bar">
+            <div class="song-info">
+                <p class="title" id="song-title">No song playing</p>
+                <p class="author" id="song-artist">No artist</p>
+            </div>
+            <div class="controls">
+                <div id="play-btn" class="button"><i class="fas fa-play"></i></div>
+                <div id="mute-btn" class="button"><i class="fas fa-volume-up"></i></div>
+            </div>
+        </div>
+        
+        
+        <div id="title">
+            <div id="title1">
+            <div id="text-tt">
+            <p1>Die With A Smile</p1>
+            <p2>Lady Gaga , Bruno Mars</p2>
+            </div>
+            <div id="heart-fav">
+                <img src="ft-pics/heart.svg" alt="">
+            </div>
+        </div>
+
+        <!-- แถบเพลงกำลังเล่น (Progress Bar) -->
+        <div class="progress-bar" id="progress-bar">
+            <div class="progress" id="progress"></div>
+            <div class="thumb" id="thumb"></div>
+        </div>
+
+        <div class="buttons">
+            <div class="random">
+                <img src="ft-pics/random.svg"></i>
+            </div>
+            <div class="backward">
+                <i class="fas fa-step-backward"></i>
+            </div>
+            <div id="play-btn-inner" class="play">
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="forward">
+                <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="loop">
+                <img src="ft-pics/loop.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+        <div class="now-playing">
+            <div id="song-pic">
+                <img src="pics/song-playing.png">
+            </div>
+            <div id="icon">
+                <img src="pics/icon.png" alt="">
+            </div>
+
+                <div id="playing-ph">
+                    <img src="pics/playing-np-ph.png">
+                </div>
+                <div id="right-button">
+                    <div id="rb-1">
+                        music
+                    </div>
+                    <div id="rb-2">
+                        COVER
+                    </div>
+                    <div id="rb-3">
+                        CHORD
+                    </div>
+                    <div id="rb-4">
+                        TUTORAIL CLIP
+                    </div>
+                    <div id="rb-5">
+                        music
+                    </div>
+                </div>
+                <div id="button">ลองใช้ฟรี</div>
+            
+        </div>
+
+        <div class="for-you">
+            <p>ยอดนิยมสำหรับคุณ</p>
+            <div id="song-for-you-box">
+                <div id="pic1">
+                    <img src="pics/box1-pic1.png">               
+                </div>
+                <img src="pics/box1-pic2.png">
+                <img src="pics/box1-pic3.png">
+                <img src="pics/box1-pic4.png">     
+                <img src="pics/box1-pic1.png">
+                <img src="pics/box1-pic2.png">
+                <img src="pics/box1-pic3.png">    
+            </div> 
+
+        </div>
+
+        <div class="artist-mode">
+        
+                <p>โหมดนักดนตรี</p>
+            </a>
+
+                    <div id="element-box">
+
+                        <a href="contentpage.html">
+                        <div id="element1">
+                            <p>ลงโคฟเวอร์<br>
+                                เวอร์ชั่นของคุณ<br></p>
+                            <img src="pics/element1.png" alt="">
+                        </div>
+                        </a>
+
+                        <a href="contentpage.html">
+                        <div id="element2">
+                            <p>คอร์ดเพลง</p>
+                            <img src="pics/element2.png" alt="">
+                        </div>
+                        </a>
+                        <a href="contentpage.html">
+                        <div id="element3">
+                            <p>เพลย์ลิสต์นักดนตรี</p>
+                            <img src="pics/element3.png" alt="">
+                        </div>
+                        </a>
+                        
+                    </div>
+                
+        </div>
+
+        <div class="mood-mixed">
+            <p>มิกซ์เพลงตามอารมณ์สำหรับคุณ</p>
+            <div id="mood-box">
+                <div id="pic1-mood">
+                    <img src="pics/mood1.png">                      
+                 </div> 
+                <div id="pic2-mood">
+                    <img src="pics/mood2.png">                      
+                 </div> 
+                <div id="pic3-mood">
+                    <img src="pics/mood3.png">                      
+                 </div> 
+                <div id="pic2-mood">
+                    <img src="pics/mood4.png">                      
+                 </div> 
+                <div id="pic3-mood">
+                    <img src="pics/mood5.png">                      
+                 </div> 
+                 <div id="pic2-mood">
+                    <img src="pics/mood6.png">                      
+                 </div> 
+            </div>
+        </div>
+
+        <div class="recent">
+            <p>ฟังล่าสุด ></p>
+
+            <div id="recent-box">
+                <div id="pic1">
+                    <img src="pics/recentpic-1.png">               
+                </div>
+                <img src="pics/recentpic-2.png">
+                <img src="pics/recentpic-3.png">
+                <img src="pics/recentpic-4.png">
+                <img src="pics/recentpic-1.png">
+                <img src="pics/recentpic-2.png">
+                <img src="pics/recentpic-3.png">
+    
+            </div> 
+        </div>
+
+        <div class="your-playlist">
+            <P>เพลย์ลิสต์ของคุณ</P>
+            <div class="urplaylist-box">
+                <div id="pl-row1">
+                <a href="featurepage.html">
+                <div id="urplaylist-1">
+                    <img src="pics/urplaylist-pic1.png">
+                    <div id="pl-text">
+                    <p1>เพลย์ลิสต์จีบเธอ</p1>
+                    <p2><br>118 เพลง, ประมาณ 7 ชม.</p2>
+                    </div>
+                    </div>
+                </a>
+                    <div id="urplaylist-2">
+                        <img src="pics/urplaylist-pic2.png">
+                    <div id="pl-text">
+                    <p1>เพลย์ลิสต์จีบเธอ</p1>
+                    <p2><br>118 เพลง, ประมาณ 7 ชม.</p2>
+                    </div>
+                    </div>
+                </div>
+                <div id="pl-row2">
+                <div id="urplaylist-3">
+                    <img src="pics/urplaylist-pic3.png">
+                    <div id="pl-text">
+                    <p1>เพลย์ลิสต์จีบเธอ</p1>
+                    <p2><br>118 เพลง, ประมาณ 7 ชม.</p2>
+                    </div></div>
+                <div id="urplaylist-4">
+                    <img src="pics/urplaylist-pic4.png">
+                    <div id="pl-text">
+                    <p1>เพลย์ลิสต์จีบเธอ</p1>
+                    <p2><br>118 เพลง, ประมาณ 7 ชม.</p2>
+                    </div>
+                </div>
+                </div>
+                <div id="pl-row3">
+                <div id="urplaylist-5">
+                    <img src="pics/urplaylist-pic5.png">
+                    <div id="pl-text">
+                    <p1>เพลย์ลิสต์จีบเธอ</p1>
+                    <p2><br>118 เพลง, ประมาณ 7 ชม.</p2>
+                    </div></div>
+                <div id="urplaylist-6">
+                    <img src="pics/urplaylist-pic6.png">
+                    <div id="pl-text">
+                    <p1>เพลย์ลิสต์จีบเธอ</p1>
+                    <p2><br>118 เพลง, ประมาณ 7 ชม.</p2>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="playist-for-you">
+            <p>เพลย์ลิสต์แนะนำ</p>
+            <div id="row1">
+                <div class="marquee">
+                    <div class="marquee__group">
+                        <img src='pics/ex-pic2.png' alt=''>
+                        <img src='pics/ex-pic4.png' alt=''>
+                        <img src='pics/ex-pic3.png' alt=''>
+                        <img src='pics/ex-pic8.png' alt=''>
+                        <img src='pics/ex-pic5.png' alt=''>
+                        <img src='pics/ex-pic6.png' alt=''>
+                        <img src='pics/ex-pic1.png' alt=''>
+                        <img src='pics/ex-pic7.png' alt=''>
+                    </div>
+                    <div class="marquee__group">
+                        <img src='pics/ex-pic1.png' alt=''>
+                        <img src='pics/ex-pic6.png' alt=''>
+                        <img src='pics/ex-pic2.png' alt=''>
+                        <img src='pics/ex-pic5.png' alt=''>
+                        <img src='pics/ex-pic7.png' alt=''>
+                        <img src='pics/ex-pic8.png' alt=''>
+                        <img src='pics/ex-pic3.png' alt=''>
+                        <img src='pics/ex-pic4.png' alt=''>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="row2">
+                <div class="marquee marquee-reverse">
+                    <div class="marquee__group">
+                        <img src='pics/ex-pic2.png' alt=''>
+                        <img src='pics/ex-pic3.png' alt=''>
+                        <img src='pics/ex-pic1.png' alt=''>
+                        <img src='pics/ex-pic6.png' alt=''>
+                        <img src='pics/ex-pic7.png' alt=''>
+                        <img src='pics/ex-pic4.png' alt=''>
+                        <img src='pics/ex-pic5.png' alt=''>
+                        <img src='pics/ex-pic8.png' alt=''>
+                    </div>
+                    <div class="marquee__group">
+                        <img src='pics/ex-pic2.png' alt=''>
+                        <img src='pics/ex-pic5.png' alt=''>
+                        <img src='pics/ex-pic1.png' alt=''>
+                        <img src='pics/ex-pic6.png' alt=''>
+                        <img src='pics/ex-pic7.png' alt=''>
+                        <img src='pics/ex-pic8.png' alt=''>
+                        <img src='pics/ex-pic3.png' alt=''>
+                        <img src='pics/ex-pic4.png' alt=''>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="section section-white">
+                <h1 class="header">“บ่งบอกความเป็นตัวคุณด้วยเสียงดนตรี"</h1>
+            </div>
+            
+            <script>
+                function checkForVisibility() {
+                    var headers = document.querySelectorAll(".header");
+                    headers.forEach(function(header) {
+                        if (isElementInViewport(header)) {
+                            header.classList.add("headerVisible");
+                        } else {
+                            header.classList.remove("headerVisible");
+                        }
+                    });
+                }
+        
+                function isElementInViewport(el) {
+                    var rect = el.getBoundingClientRect();
+        
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+        
+                if (window.addEventListener) {
+                    addEventListener("DOMContentLoaded", checkForVisibility, false);
+                    addEventListener("load", checkForVisibility, false);
+                    addEventListener("scroll", checkForVisibility, false);
+                }
+            </script>
+        </div>
+        <div class="footer">
+            <div id="left">
+            
+            <a href="index.html"><img src="pics/logo-menu.png"></a></1a>
+            <p>Copyright © 2024 Vibrise Inc.All right rederved</p>
+            <div id="text-link">
+            <p>กฎหมาย</p>
+            <a href="contact.html">
+            <p>ศูนย์ความปลอดภัยและความเป็นส่วนตัว</p>
+            </a>
+            <p>นโยบายความเป็นส่วนตัว</p>
+            <p>คุกกี้</p>
+            <p>เกี่ยวกับโฆษณา</p>
+            <p>การเข้าถึง</p>
+            </div>
+            </div>
+            <div id="right">
+                <img src="pics/footer-logo1.png">
+
+                <img src="pics/footer-logo2.png">
+                <img src="pics/footer-logo3.png">
+            </div>
+        </div>
+        <script>
+            let audioList = [
+                {
+                    title: "Die With A Smile",
+                    album: "Lady Gaga",
+                    author: "Lady Gaga",
+                    source: "music/Die With A Smile.mp3",
+                    type: "audio/mpeg"
+                }
+            ];
+    
+            let currentAudio;
+            let playBtn = document.getElementById("play-btn-inner"); // แก้ไขให้ตรงกับ id ที่ใช้
+            let muteBtn = document.getElementById("mute-btn");
+            let songTitle = document.getElementById("song-title");
+            let songArtist = document.getElementById("song-artist");
+            let progressBar = document.getElementById("progress-bar");
+            let progress = document.getElementById("progress");
+            let thumb = document.getElementById("thumb");
+    
+            // ฟังก์ชันการโหลดเพลง
+            function loadAudio(audio = 0){
+                if(currentAudio){
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                songTitle.innerHTML = audioList[audio].title;
+                songArtist.innerHTML = audioList[audio].author;
+                currentAudio = new Audio(audioList[audio].source);
+            }
+    
+            // ฟังก์ชันการอัพเดตแถบ progress
+            function updateProgress(){
+                let progressWidth = (currentAudio.currentTime / currentAudio.duration) * 100;
+                progress.style.width = progressWidth + "%";
+                thumb.style.left = `calc(${progressWidth}% - 10px)`;
+            }
+    
+            // ฟังก์ชันการเล่น/หยุดเพลง
+            playBtn.addEventListener("click", function(){
+                if(currentAudio.paused){
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    currentAudio.play();
+                } else {
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    currentAudio.pause();
+                }
+            });
+    
+            // ฟังก์ชัน mute/unmute
+            muteBtn.addEventListener("click", function(){
+                if(!currentAudio.muted){
+                    muteBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                    currentAudio.muted = true;
+                } else {
+                    muteBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                    currentAudio.muted = false;
+                }
+            });
+    
+            // ฟังก์ชันเปลี่ยนตำแหน่งเพลงจากแถบ
+            thumb.addEventListener("mousedown", function(event) {
+                let offsetX = event.offsetX;
+                let maxWidth = progressBar.offsetWidth;
+                let newTime = (offsetX / maxWidth) * currentAudio.duration;
+                currentAudio.currentTime = newTime;
+            });
+    
+            // เรียกใช้งานฟังก์ชันเริ่มต้น
+            (function load(){
+                loadAudio();
+                setInterval(updateProgress, 100);
+            })();
+    
+            currentAudio.addEventListener("ended", function(){
+                playBtn.innerHTML = '<i class="fas fa-play"></i>';
+            });
+        </script>
+    </div>
+</body>
+</html>
